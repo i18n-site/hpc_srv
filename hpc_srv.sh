@@ -5,7 +5,6 @@ cd $DIR
 
 set -e
 . env.sh
-
 set -x
 
 cargo run -p hpc_srv
