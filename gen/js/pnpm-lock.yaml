@@ -1,0 +1,53 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      '@3-/protoscript':
+        specifier: ^0.0.48
+        version: 0.0.48
+      i:
+        specifier: link:../../../web/lib/i
+        version: link:../../../web/lib/i
+
+packages:
+
+  '@3-/protoscript@0.0.48':
+    resolution: {integrity: sha512-FEbWy6dIfWT5Ko6/MVmhzUcrFVR8DrceP6aoV21/f79zWFgfe+lLY8/kPvtRC04otzaB8t4zUnusBWCmi99+AQ==}
+    hasBin: true
+
+  '@3-/snake@0.0.3':
+    resolution: {integrity: sha512-l6oWGlD/zqrblyue9uXbFK+h9EPE8J2rM5O6BobG/YnxyWMI9z5sCbWq6wRShSBCIOvcJeg93wbcGTsvO2rsjw==}
+
+  '@3-/utf8@0.0.4':
+    resolution: {integrity: sha512-hoVIOCX70JteiRPzRZ8Yw51kb/H9dWxx55oW+RQ38hHE8+/uOIriJZ024HhCYaLDKykUyDoknRbzKjjMQ++new==}
+
+  google-protobuf@3.21.4:
+    resolution: {integrity: sha512-MnG7N936zcKTco4Jd2PX2U96Kf9PxygAPKBug+74LHzmHXmceN16MmRcdgZv+DGef/S9YvQAfRsNCn4cjf9yyQ==}
+
+  prettier@3.4.2:
+    resolution: {integrity: sha512-e9MewbtFo+Fevyuxn/4rrcDAaq0IYxPGLvObpQjiZBMAzB9IGmzlnG9RZy3FFas+eBMu2vA0CszMeduow5dIuQ==}
+    engines: {node: '>=14'}
+    hasBin: true
+
+snapshots:
+
+  '@3-/protoscript@0.0.48':
+    dependencies:
+      '@3-/snake': 0.0.3
+      '@3-/utf8': 0.0.4
+      google-protobuf: 3.21.4
+      prettier: 3.4.2
+
+  '@3-/snake@0.0.3': {}
+
+  '@3-/utf8@0.0.4': {}
+
+  google-protobuf@3.21.4: {}
+
+  prettier@3.4.2: {}

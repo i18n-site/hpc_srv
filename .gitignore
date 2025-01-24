@@ -6,6 +6,5 @@ bun.lock
 bun.lockb
 node_modules/
 out.txt
-pnpm-lock.yaml
 target/
 
