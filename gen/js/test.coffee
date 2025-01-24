@@ -25,3 +25,10 @@ console.log {id}
 ]
 console.log {id1,id2}
 
+setTimeout =>
+  [id2,img,tip] = await captcha()
+  console.log {id2}
+  return
+
+[id1,img,tip] = await captcha()
+console.log {id1}
