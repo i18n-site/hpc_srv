@@ -12,8 +12,8 @@ importers:
         specifier: ^0.0.48
         version: 0.0.48
       i:
-        specifier: link:../../../web/lib/i
-        version: link:../../../web/lib/i
+        specifier: link:../../../web/dist/i
+        version: link:../../../web/dist/i
 
 packages:
 
