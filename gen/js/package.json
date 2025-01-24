@@ -1,7 +1,7 @@
 {
   "type": "module",
   "dependencies": {
-    "@3-/ireq": "^0.1.19",
-    "@3-/protoscript": "^0.0.48"
+    "@3-/protoscript": "^0.0.48",
+    "i": "link:../../../web/lib/i"
   }
 }
