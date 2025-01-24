@@ -6,14 +6,13 @@ import {
   T2Decode // BinLiDecode
 } from './_.pb.js'
 
-import ireq from '@3-/ireq'
+import hpc from 'i/hpc.js'
 
 const [
   _setUrl,
   _noArgs,
-  _req,
-  _batch
-] = ireq(
+  _req
+] = hpc(
   // err catch
   (code, res)=>{
     console.log('TODO err catch', code)
@@ -21,7 +20,6 @@ const [
   T0Encode, T1Encode, T2Decode,
 )
 
-export const batch = _batch;
 export const setUrl = _setUrl;
 
 export const captcha = _noArgs(1,T3Decode) /* id:Box<[u8]>,img:Box<[u8]>,tip:Box<[u8]> */
