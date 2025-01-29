@@ -2,6 +2,6 @@
   "type": "module",
   "dependencies": {
     "@3-/protoscript": "^0.0.48",
-    "u": "npm:@3-/util"
+    "u": "file:../../../web/util"
   }
 }
