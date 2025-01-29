@@ -2,6 +2,7 @@
   "type": "module",
   "dependencies": {
     "@3-/protoscript": "^0.0.48",
-    "u": "link:./node_modules/@3-/util"
+    "i": "^0.3.7",
+    "u": "npm:@3-/util@^0.1.0"
   }
 }
