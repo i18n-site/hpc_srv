@@ -6,7 +6,7 @@ import {
   T2Decode // BinLiDecode
 } from './_.pb.js'
 
-import hpc from 'i/hpc.js'
+import hpc from 'u/hpc.js'
 
 const [
   _setUrl,
