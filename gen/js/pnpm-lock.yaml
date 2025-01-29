@@ -11,9 +11,9 @@ importers:
       '@3-/protoscript':
         specifier: ^0.0.48
         version: 0.0.48
-      i:
-        specifier: link:../../../web/dist/i
-        version: link:../../../web/dist/i
+      u:
+        specifier: link:./node_modules/@3-/util
+        version: link:node_modules/@3-/util
 
 packages:
 
