@@ -2,7 +2,6 @@
   "type": "module",
   "dependencies": {
     "@3-/protoscript": "^0.0.48",
-    "i": "^0.3.7",
-    "u": "npm:@3-/util@^0.1.0"
+    "u": "npm:@3-/util"
   }
 }

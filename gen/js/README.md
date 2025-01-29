@@ -1,3 +1,3 @@
-pnpm i u@npm:@3-/util
+bun i u@npm:@3-/util
 
 
