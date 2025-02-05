@@ -4,10 +4,10 @@
   # ./_.pb.js > T0Encode:CallEncode T0Decode:CallDecode T1Encode:CallLiEncode T1Decode:CallLiDecode
   ./_.pb.js > T2Encode:BinLiEncode T2Decode:BinLiDecode
 
-setUrl 'https://127.0.0.1:7776'
-# setUrl 'http://127.0.0.1:2025'
+# for nginx https proxy use this
+# setUrl 'https://127.0.0.1:7776'
 
-# console.log await captchaXxxFunc(3,6)
+setUrl 'http://127.0.0.1:2025'
 
 [
   id
