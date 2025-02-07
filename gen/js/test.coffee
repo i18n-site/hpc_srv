@@ -1,13 +1,20 @@
 #!/usr/bin/env coffee
 
-> ./api.js > captcha setUrl
+> ./api.js > captcha set
   # ./_.pb.js > T0Encode:CallEncode T0Decode:CallDecode T1Encode:CallLiEncode T1Decode:CallLiDecode
   ./_.pb.js > T2Encode:BinLiEncode T2Decode:BinLiDecode
 
 # for nginx https proxy use this
-# setUrl 'https://127.0.0.1:7776'
+# set(
+#   'https://127.0.0.1:7776'
 
-setUrl 'http://127.0.0.1:2025'
+set(
+  'http://127.0.0.1:2025'
+  console.error
+  (state, code, req)=>
+    console.log({state, code, req})
+    return
+)
 
 [
   id

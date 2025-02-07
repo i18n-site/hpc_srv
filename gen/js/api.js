@@ -9,18 +9,12 @@ import {
 import hpc from 'u/hpc.js'
 
 const [
-  _setUrl,
+  _set,
   _noArgs,
   _req
-] = hpc(
-  // err catch
-  (code, res)=>{
-    console.log('TODO err catch', code)
-  },
-  T0Encode, T1Encode, T1Decode,
-)
+] = hpc(T0Encode, T1Encode, T1Decode)
 
-export const setUrl = _setUrl;
+export const set = _set;
 
 export const captcha = _noArgs(1,T2Decode) /* id:Box<[u8]>,img:Box<[u8]>,tip:Box<[u8]> */
 export const authSigninMail = (address /* str */,password /* str */)=>_req(2,T3Encode([address,password]))
