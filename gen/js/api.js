@@ -1,6 +1,6 @@
 import {
-  T4Encode,
-  T3Decode,T5Decode,
+  T3Encode,
+  T4Decode,
   T0Encode, // CallEncode,
   T1Encode, //CallLiEncode,
   T2Decode // BinLiDecode
@@ -22,7 +22,7 @@ const [
 
 export const setUrl = _setUrl;
 
-export const captcha = _noArgs(1,T3Decode) /* id:Box<[u8]>,img:Box<[u8]>,tip:Box<[u8]> */
-export const authSigninMail = (address /* str */,password /* str */)=>_req(2,T4Encode([address,password]))
-export const authSignupMail = (address /* str */,password /* str */)=>_req(3,T4Encode([address,password]))
-export const authSignupMailVerify = (address /* str */,code /* str */)=>_req(4,T5Decode,T4Encode([address,code])) /* SIGNUP_MAIL_VERIFY:enum */
+export const captcha = _noArgs(1,T2Decode) /* id:Box<[u8]>,img:Box<[u8]>,tip:Box<[u8]> */
+export const authSigninMail = (address /* str */,password /* str */)=>_req(2,T3Encode([address,password]))
+export const authSignupMail = (address /* str */,password /* str */)=>_req(3,T3Encode([address,password]))
+export const authSignupMailVerify = (address /* str */,code /* str */)=>_req(4,T4Decode,T3Encode([address,code])) /* SIGNUP_MAIL_VERIFY:enum */
