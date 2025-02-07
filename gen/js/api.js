@@ -1,9 +1,9 @@
 import {
   T3Encode,
-  T4Decode,
-  T0Encode as CallEncode,
-  T1Encode as CallLiEncode,
-  T1Decode as BinLiDecode
+  T2Decode,T4Decode,
+  T0Encode, // CallEncode,
+  T1Encode, //CallLiEncode,
+  T1Decode // BinLiDecode
 } from './_.pb.js'
 
 import hpc from 'u/hpc.js'
@@ -17,7 +17,7 @@ const [
   (code, res)=>{
     console.log('TODO err catch', code)
   },
-  CallEncode, CallLiEncode, BinLiDecode,
+  T0Encode, T1Encode, T1Decode,
 )
 
 export const setUrl = _setUrl;
