@@ -7,4 +7,4 @@ set -ex
 cd gen/proto
 # rsync -avz ../../ProtoScript/packages/protoscript/dist ./node_modules/@3-/protoscript/
 bun x protoscript
-./bundle.coffee
+# ./bundle.coffee
