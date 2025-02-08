@@ -11,8 +11,12 @@
 set(
   'http://127.0.0.1:2025'
   console.error
-  (state, code, req)=>
-    console.log({state, code, req})
+  (
+    code
+    msg
+    req # [decode, resolve, reject, func_id, args_bin]
+  )=>
+    console.log({code, msg, req})
     return
 )
 
