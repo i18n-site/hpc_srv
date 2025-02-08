@@ -11,7 +11,9 @@
 set(
   'http://127.0.0.1:2025'
   console.error
-  "en"
+  (headers)=>
+    headers['accept-language'] = 'en'
+    return
   (
     code
     msg
